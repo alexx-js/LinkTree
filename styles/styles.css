@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252525;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header picture img {
+  width: 245px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  color: #ffffff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+}
+
+.go {
+  position: relative;
+  padding: 0 0 0 96px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  width: 204px;
+  height: 46px;
+  border-radius: 100px;
+}
+
+.go img {
+  width: 18px;
+  color: #000000;
+}
+
+#flecha {
+  position: absolute;
+  right: 16px;
+  display: none;
+}
+
+.go:hover,
+.go:focus {
+  background-color: #ffffffda;
+}
+
+.go:hover #flecha,
+.go:focus #flecha {
+  display: block;
+  transition: ease 1s;
+}
+
+.btn-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
